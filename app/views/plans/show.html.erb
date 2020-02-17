@@ -1,0 +1,9 @@
+<h1>Plans#show</h1>
+
+<% if @plan.weeks.any? %>
+  <ul>
+    <% @plan.weeks.each do |week| %>
+      <li><%= link_to week.name, week %></li>
+    <% end %>
+  </ul>
+<% end %>
